@@ -114,6 +114,7 @@ img {
 }
 
 .nav-links {
+    position: relative;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -146,9 +147,9 @@ img {
     height: 4px;
     background-color: #4D5AE5;
     border-radius: 2px;
-    position: relative;
-    top: 24px;
-    right: 48px;
+    position: absolute;
+    top: 44px;
+    margin-right: 4px;
 }
 .header-link2::after {
     content: '';
@@ -157,9 +158,8 @@ img {
     height: 4px;
     background-color: #4D5AE5;
     border-radius: 2px;
-    position: relative;
-    top: 24px;
-    right: 72px;
+    position: absolute;
+    top: 44px;
     border-bottom: 4px solid #4D5AE5;
 }
 .header-link3::after {
@@ -487,12 +487,14 @@ img {
     width: 168px;
     height: 88px;
     border: 1px solid grey;
+    border-radius: 4px;
     margin-right: 24px;
 }
 .cmp-list-item2 {
     width: 168px;
     height: 88px;
     border: 1px solid grey;
+    border-radius: 4px;
     margin-right: 24px;
     
 }
@@ -500,6 +502,7 @@ img {
     width: 168px;
     height: 88px;
     border: 1px solid grey;
+    border-radius: 4px;
     margin-right: 24px;
     
 }
@@ -507,6 +510,7 @@ img {
     width: 168px;
     height: 88px;
     border: 1px solid grey;
+    border-radius: 4px;
     margin-right: 24px;
     
 }
@@ -514,6 +518,7 @@ img {
     width: 168px;
     height: 88px;
     border: 1px solid grey;
+    border-radius: 4px;
     margin-right: 24px;
     
 }
@@ -521,6 +526,7 @@ img {
     width: 168px;
     height: 88px;
     border: 1px solid grey;
+    border-radius: 4px;
     
 }
 .bckg-footer {
@@ -553,6 +559,7 @@ img {
     font-size: 16px;
     width: 264px;
     margin-bottom: 16px;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--accent);
@@ -839,12 +846,11 @@ img {
 }
 .modal {
     position: absolute;
-    margin-left: 232px;
     width: 408px;
     height: 576px;
-    left: 514px;
-    right: 564px;
-    top: 160px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -896,8 +902,14 @@ img {
     padding-bottom: 120px;
 }
 .merch-info {
+    border: 0.5px solid #F4F4FD;
+    padding-top: 32px;
     padding-left: 16px;
     padding-bottom: 32px;
+    border: 0.5px solid #F4F4FD;
+}
+.merch-info:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .filter-btns {
     margin-bottom: 72px;
@@ -962,7 +974,7 @@ img {
 }
 .merch-rows {
     flex-basis: calc((100% - 48px) / 3);
-    border: 0.5px solid #F4F4FD;
+    /* border: 0.5px solid #F4F4FD; */
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     transition-property: box-shadow;
     transition-duration: 250ms;
@@ -1012,7 +1024,7 @@ img {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-top: 32px;
+    /* margin-top: 32px; */
     color: var(--dark);
 }
 .categories {
